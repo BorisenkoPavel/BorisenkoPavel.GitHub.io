@@ -1,0 +1,105 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.h1 
+		font-size: 55px
+	.header-contacts
+		font-size: 15px
+	.footer-contacts
+		.phone-contacts
+			font-size: 20px
+			margin-top: 30px
+			.fa-mobile-alt
+				font-size: 18px
+				top: 7px
+// ≥992px
++media-breakpoint-down(md)
+	.h1 
+	  font-size: 40px
+	.header-contacts
+		.phone-contacts
+			text-align: right
+	.header-composition
+		p:nth-child(2)
+			font-size: 15px
+		span
+			font-size: 10px
+	.carousel-services-item
+		flex-direction: column
+	.s-call
+		background-size: cover
+	.footer-contacts
+		.phone-contacts
+			font-size: 20px
+			margin-top: 30px
+			.fa-mobile-alt
+				font-size: 18px
+				top: 7px
+// ≥768px
++media-breakpoint-down(sm)
+	.h1 
+	  font-size: 29px
+	.header-contacts
+		font-size: 12px
+	.header-composition
+		p:nth-child(2)
+			font-size: 12px
+		span
+			font-size: 7px
+		.welcome
+			strong
+				font-size: 13px
+	.s-call
+		&:before
+			width: 100%
+	.carousel-partners .owl-nav .owl-next
+		right: 0
+	.carousel-partners .owl-nav .owl-prev
+		left: 0
+	.main-footer
+		.soc
+			top: 80px
+		p
+			margin-bottom: 60px
+
+
+
+// ≥576px
++media-breakpoint-down(xs)
+	.h1 
+	  font-size: 20px
+	.header-contacts
+		font-size: 12px
+		white-space: nowrap
+	.header-composition
+		margin-left: 40px
+		p:nth-child(2)
+			margin-top: 20px
+			font-size: 10px
+		span
+			font-size: 5px
+		.welcome
+			strong
+				margin-top: 20px
+				font-size: 10px
+	.button
+		padding: 13px 35px
+	.quotes
+		display: none
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
